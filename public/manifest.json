@@ -1,0 +1,17 @@
+{
+  "name": "Youtube Clips Reddit",
+  "description": "This extension is enable viewing YouTube clips in reddit",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting"],
+  "action": {},
+  "content_scripts": [
+    {
+      "matches": ["http://*"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
